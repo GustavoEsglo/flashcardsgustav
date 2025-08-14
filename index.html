@@ -3,29 +3,65 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="assets/style.css">
-    <title>Flashcard</title>
+    <title>Cartas Medievais</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <main>
-        <section id="container">
-            <!-- <article class="cartao">
-                <div class="cartao__conteudo">
-                    <h3>Programação</h3>
-                    <div class="cartao__conteudo__pergunta">
-                        <p>O que é JavaScript?</p>
+    <div class="container">
+        <h1>O Tomo das Curiosidades</h1>
+        <div class="cards-grid">
+            <div class="card" onclick="flipCard(this)">
+                <div class="card-inner">
+                    <div class="card-front">
+                        <p class="question">Qual era o nome da espada do Rei Arthur?</p>
                     </div>
-                    <div class="cartao__conteudo__resposta">
-                        <p>O JavaScript é uma linguagem de programação</p>
+                    <div class="card-back">
+                        <p class="answer">Excalibur</p>
                     </div>
                 </div>
-            </article> -->
-        </section>
-    </main>
-    <footer>
-        <p>Projeto desenvolvido pela Alura, sem fins lucrativos</p>
-    </footer>
-    <script src="app.js"></script>
-    <script src="perguntas.js"></script>
+            </div>
+            <div class="card" onclick="flipCard(this)">
+                <div class="card-inner">
+                    <div class="card-front">
+                        <p class="question">Qual animal foi considerado sagrado no Antigo Egito?</p>
+                    </div>
+                    <div class="card-back">
+                        <p class="answer">Gato</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card" onclick="flipCard(this)">
+                <div class="card-inner">
+                    <div class="card-front">
+                        <p class="question">Qual é o planeta mais próximo do Sol?</p>
+                    </div>
+                    <div class="card-back">
+                        <p class="answer">Mercúrio</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card" onclick="flipCard(this)">
+                <div class="card-inner">
+                    <div class="card-front">
+                        <p class="question">Quantos continentes existem no mundo?</p>
+                    </div>
+                    <div class="card-back">
+                        <p class="answer">7</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card" onclick="flipCard(this)">
+                <div class="card-inner">
+                    <div class="card-front">
+                        <p class="question">Qual a capital da França?</p>
+                    </div>
+                    <div class="card-back">
+                        <p class="answer">Paris</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
 </body>
 </html>
